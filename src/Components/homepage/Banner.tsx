@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <section className="py-20 bg-gray-50">
   <div className="container mx-auto px-6">
-    <div className="grid md:grid-cols-2 gap-10 items-center bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden">
+    <div className="grid md:grid-cols-2 gap-10 items-center bg-linear-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden">
 
       {/* Content */}
       <div className="space-y-6 text-white">

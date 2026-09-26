@@ -9,9 +9,15 @@ interface BookdetailsPageprops {
     }>;
 }
 const getBooks = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_UR}/booksData.json`)
+  try{
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`,)
     const data = res.json();
     return data;
+  }catch(error){
+    console.error(error)
+    return []
+  }
 }
 
 const BookDetailspage = async ({ params }: BookdetailsPageprops) => {

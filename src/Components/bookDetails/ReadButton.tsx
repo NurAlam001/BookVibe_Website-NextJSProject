@@ -15,7 +15,7 @@ const ReadButton = ({book}:{book: IBook}) => {
 
     }
     return (
-        <button className="px-5 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:opacity-90 transition" onClick={() => handleReadBook()}>
+        <button className="px-5 py-2 rounded-lg bg-linear-to-r from-blue-500 to-purple-600 text-white font-medium hover:opacity-90 transition" onClick={() => handleReadBook()}>
               Read
         </button>
     );
